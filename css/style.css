@@ -1,0 +1,102 @@
+/* Box Model Hack */
+
+* {
+    -moz-box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {}
+
+#flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14%;
+    height: 100%;
+    background-color: #333366;
+    border: 1px solid black;
+}
+
+section>div.row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+section>div.first {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section>div.fourth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 20%;
+    height: 20%;
+    background-color: #996633;
+    color: white;
+    border-radius: 8px;
+}
+
+section>div.last {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+section>h1#display {
+    height: 50%;
+    border: 1px solid black;
+    width: 100%;
+    background-color: rgba(102, 51, 102, 0.3);
+}
+
+footer {}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
